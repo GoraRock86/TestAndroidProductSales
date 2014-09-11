@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:background="@drawable/bg_item" >
+
+    <LinearLayout
+        android:id="@+id/llContentFields"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/min_width_dialog_product"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp" >
+
+            <ImageView
+                android:id="@+id/imageViewProduct"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:src="@drawable/ipad" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        style="@style/styleLabelProducto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/lbl_text_select" />
+
+                    <Spinner
+                        android:id="@+id/SpinnerSelectImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/lblProductName"
+                    style="@style/styleLabelProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_product_name" />
+
+                <EditText
+                    android:id="@+id/EditTextName"
+                    style="@style/styleEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:inputType="text"
+                    android:ems="10" />
+
+                <TextView
+                    android:id="@+id/lblProductRegularPrice"
+                    style="@style/styleLabelProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/lbl_product_rprice" />
+
+                <EditText
+                    android:id="@+id/EditTextRPrice"
+                    style="@style/styleEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:singleLine="true"
+                    android:imeOptions="actionNext"
+                    android:inputType="numberDecimal" >
+                </EditText>
+
+                <TextView
+                    android:id="@+id/lblProductSalePrice"
+                    style="@style/styleLabelProducto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/lbl_product_sprice" />
+
+                <EditText
+                    android:id="@+id/EditTextSPrice"
+                    style="@style/styleEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:imeOptions="actionNext"
+                    android:singleLine="true"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/textView1"
+                style="@style/styleLabelProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/lbl_product_color" />
+
+            <Spinner
+                android:id="@+id/SpinnerColors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp" >
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/styleLabelProducto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/lbl_product_store" />
+
+            <Spinner
+                android:id="@+id/spinnerStore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/TextView01"
+            style="@style/styleLabelProducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/lbl_product_descripcion" />
+
+        <EditText
+            android:id="@+id/EditTextDescription"
+            style="@style/styleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:lines="2"
+            android:inputType="text"
+            android:imeOptions="actionDone"
+            android:maxLines="2" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/action_str_save" />
+    </LinearLayout>
+
+</ScrollView>

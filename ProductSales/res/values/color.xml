@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 0055AB colorBlue -->
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_blue">#255CA8</color>
+    <color name="color_black">#000000</color>
+    <color name="color_orange">#E97119</color>
+    <color name="Color_red">#EE0000</color>
+    <color name="Color_Gray">#4B4B4B</color>
+    <color name="opaqueBlack">#7F000000</color>
+</resources>
